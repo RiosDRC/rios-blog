@@ -4,8 +4,12 @@ import axios from 'axios'
 
 async function getBlogs() {
   try {
-    const res = await axios(API_BASE_URL + '/posts')
-    return res.data
+    const res = await fetch(API_BASE_URL + '/posts', {
+      next: {
+        revalidate: 0
+      }
+    })
+    return res.json()
   } catch (error) {
     console.log(error)
   }
