@@ -14,12 +14,12 @@ export default function Navbar() {
 
     const Tabs = () => (
       <>
-        <Link href='/?cat=art' className='tabs_link'><li>ART</li></Link>
-        <Link href='/?cat=science' className='tabs_link'><li>SCIENCE</li></Link>
-        <Link href='/?cat=technology' className='tabs_link'><li>TECHNOLOGY</li></Link>
-        <Link href='/?cat=cinema' className='tabs_link'><li>CINEMA</li></Link>
-        <Link href='/?cat=design' className='tabs_link'><li>DESIGN</li></Link>
-        <Link href='/?cat=food' className='tabs_link'><li>FOOD</li></Link>
+        <Link href='/art' className='tabs_link'><li>ART</li></Link>
+        <Link href='/science' className='tabs_link'><li>SCIENCE</li></Link>
+        <Link href='/technology' className='tabs_link'><li>TECHNOLOGY</li></Link>
+        <Link href='/cinema' className='tabs_link'><li>CINEMA</li></Link>
+        <Link href='/design' className='tabs_link'><li>DESIGN</li></Link>
+        <Link href='/food' className='tabs_link'><li>FOOD</li></Link>
         {currentUser ?
         <>
           <Link href='/user'
